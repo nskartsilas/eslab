@@ -1,0 +1,16 @@
+<NotepadPlus>
+    <Project name="Pool_Notify_DSP">
+        <File name="dsp\dsp_main.c" />
+        <File name="dsp\makefile" />
+        <File name="dsp\pool_notify_config.c" />
+        <File name="dsp\pool_notify_config.h" />
+        <File name="dsp\task.c" />
+        <File name="dsp\task.h" />
+    </Project>
+    <Project name="Pool_Notify_GPP">
+        <File name="gpp\gpp_main.c" />
+        <File name="gpp\makefile" />
+        <File name="gpp\pool_notify.c" />
+        <File name="gpp\pool_notify.h" />
+    </Project>
+</NotepadPlus>

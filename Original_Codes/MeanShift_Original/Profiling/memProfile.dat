@@ -1,0 +1,27 @@
+ This table can be sorted by Total Accesses (-k2) by using bash command:
+    tail -n +7 memProfile.dat | sort -k2 -gr
+
+ Per Function Flat Memory Profile 
+                               Function Name 	 ================= Accesses  =========    Allocation
+                                                      Total         Reads       Writes       Path
+                         ==========================================================================
+                                         main     945065089     700285670     244779419  NA:0
+                MeanShift::pdf_representation      40228018      26578779      13649239  meanshift.cpp:19
+               MeanShift::Epanechnikov_kernel       3673010        330618       3342392  meanshift.cpp:46
+                             MeanShift::track       3496606       3448798         47808  main.cpp:57
+                         MeanShift::CalWeight     556533741     438930324     117603417  meanshift.cpp:115
+
+
+ Per Object Flat Memory Profile 
+                                 Object Name 	 =============== Accesses  ============        ==== Efficiency ====  ==== Allocation
+                                                      Total         Reads       Writes        Alloc %        Prod %      Path
+                         ============================================================================================================
+                                         Obj4      59145224      29638920      29506304       94.6916             0  main.cpp:24
+                                         Obj5     262658516     232973036      29685480       99.9974       99.9974  main.cpp:31
+                                        Obj11       9876240       9876240             0             0       31.1111  meanshift.cpp:46
+                                        Obj12      26566668      16715780       9850888       66.7702             0  main.cpp:37
+                                        Obj14      16476620       9878220       6598400       99.9973      0.605575  meanshift.cpp:114
+                                        Obj15      29744220      19754460       9989760       99.8025      0.166105  meanshift.cpp:46
+                                        Obj17      27436860      13170300      14266560       99.9973      0.605575  meanshift.cpp:115
+                                        Obj18     163371780      61894800     101476980       97.6877   0.000157765  meanshift.cpp:87
+                                        Obj19           520           512             8           100           100  main.cpp:68
